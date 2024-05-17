@@ -1,0 +1,26 @@
+<html>
+    <title>Suggestions submitted</title>
+    <head>
+        <link rel="stylesheet" href="css.css">
+
+        <nav id="Navigation">
+            <ul>   <img src="new.jpeg" alt="Warner Bros Logo" height="50px"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="gamesand apps.html">Games & Apps</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+
+    </head>
+    <body>
+        <P>
+            <h1>To be reviewed</h1>
+
+            Thank you for the suggestions, we will review it and try improve for a more user friendly and interactive webpage.
+            Click the top back arrow to continue accessing the website 
+        </P>
+    </body>
+</html>
