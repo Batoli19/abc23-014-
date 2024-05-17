@@ -1,0 +1,308 @@
+   
+        /* Styles for the navigation bar */
+        nav {
+            background-color: #000000;
+            overflow: hidden;
+        }
+    
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex; /* Display items in a flex container */
+        }
+
+        nav ul li {
+            flex-grow: 1; /* Allow items to grow and fill the available space */
+        }
+
+        nav ul li a {
+            display: block;
+            color: rgb(255, 254, 254);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px; /* Larger font size */
+            font-weight: bold; /* Bold text */
+        }
+
+        nav ul li a:hover {
+            background-color: #8f710e;
+        }
+        
+    body {
+        background-color: rgb(255, 255, 255);
+      }
+      
+        
+        
+  
+       .top img {
+            position: relative;
+            width: 100%;
+            height: 550px;
+            
+          }
+          .top h1 {
+            position: absolute;
+            top: 60px; /* Adjust the distance from the top */
+            left: 20px; /* Adjust the distance from the left */
+            color: rgb(10, 10, 10);
+            font-size: 24px;
+            border: 1px solid white; /* Add a white border */
+            padding: 10px; /* Add padding inside the border */
+            background-color: rgb(228, 219, 219); /* Fill the inside of the border with white */
+        
+        }
+        .image-gallery {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gallery-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            color: #000;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        }
+
+        .image-gallery {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: left; 
+            gap: 10px; 
+            color: #111111;
+            
+           }
+        
+           .image-gallery figure {
+           display: inline-block; 
+           text-align: center; 
+           margin: 10px; 
+           width: calc(10% - 20px);
+           }
+           .image-gallery figure img{
+              height: 250px;
+           }
+        
+           .image-gallery figcaption {
+           font-size: 14px; 
+           margin-top: 10px;
+           padding: 0 70px; 
+           }
+           .details {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .details h3 {
+            margin: 0;
+            color: rgb(14, 15, 15);
+        }
+
+		
+		
+		.rating {
+			display: inline-block;
+			align-items: left;
+			margin-top: 0px;
+		}
+		
+		.stars {
+			font-size: 30px;
+			color: rgb(182, 130, 27);
+		}
+		
+        
+    
+        figure {
+            position: relative;
+            margin: 100px;
+            flex: 0 0 15%; /* 4 images per row */
+        }
+		footer {
+			background-color: black;
+			color: white;
+			padding: 0px;
+			display: flex;
+			justify-content: space-between;
+		  }
+	  
+		  footer img {
+			width: 25px;
+			height: auto;
+			margin-right: 0rem;
+			
+		  }
+	  
+		  footer img:hover {
+			opacity: 0;
+			background: black;
+		  }
+          
+  
+          .video-container {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            height: 550px; /* Set fixed height */
+        }
+        
+        video {
+            width: 100%;
+            height: 100%; /* Make the video fill the container */
+            display: block;
+            object-fit: cover; /* Maintain aspect ratio and fill container */
+            position: relative; /* Set video position to relative */
+            z-index: 2; /* Ensure the video is on top of the overlay */
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 10px; /* Adjust position as needed */
+            left: 550px; /* Adjust position as needed */
+            background-color: rgb(19, 18, 18);
+            padding: 10px;
+            box-sizing: border-box;
+            z-index: 3; /* Ensure the overlay is on top of the video */
+        }
+        
+        .overlay h2 {
+            color: rgb(8, 8, 8);
+            margin: 0;
+            text-align: center;
+        }
+       
+      
+
+        /* Hide all videos by default */
+        .video-slide {
+            display: none;
+        }
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        
+
+        /* Hide all videos by default */
+        .video-slide {
+            display: none;
+        }
+
+        /* Ensure videos are displayed horizontally */
+        .video-slide video {
+            width: 100%;
+            height: 550px;
+        }
+        form {
+            background-color: #fff;
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+           max-width: 600px;
+           margin: 0 auto;
+         }
+        
+         h2 {
+           text-align: center;
+           color: white;
+         }
+        
+         label {
+           font-size: 16px;
+           font-weight: bold;
+           margin-bottom: 5px;
+          color: #333;
+         }
+        
+         input[type="text"],
+         input[type="email"],
+         select,
+         textarea {
+           border-radius: 3px;
+            border: 1px solid #ccc;
+           padding: 10px;
+           font-size: 16px;
+           width: 100%;
+           margin-bottom: 10px;
+           box-sizing: border-box;
+         }
+        
+         input[type="submit"] {
+          background-color: #333;
+          color: black;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 3px;
+          font-size: 16px;
+          cursor: pointer;
+         }
+        
+         input[type="submit"]:hover {
+          background-color: #666;
+         }
+        
+         .rating-stars {
+          display: inline-block;
+           width: 120px;
+          font-size: 0;
+          white-space: nowrap;
+          cursor: pointer;
+          overflow: hidden;
+         }
+        
+         .rating-stars > input {
+           display: none;
+         }
+        
+         .rating-stars > label {
+            display: inline-block;
+           position: relative;
+           width: 20px;
+           height: 20px;
+           margin: 0px 2px;
+            background-color: transparent;
+         }
+        
+         .rating-stars > label:before {
+          content: "\2605";
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 25px;
+          color: #ccc;
+         }
+        
+          .rating-stars > input:checked ~ label:before,
+         .rating-stars > label:hover:before {
+            color: #ffbf00;
+         }
+         h1 {
+            color: white;
+        }
+        
+        
